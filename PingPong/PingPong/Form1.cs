@@ -15,7 +15,7 @@ namespace PingPong
 
         public int speed_left = 4;
         public int speed_top = 4;
-        public int points = 0;
+        public int punkty = 0;
 
         public Form1()
         {
@@ -47,8 +47,8 @@ namespace PingPong
                 speed_top += 2;
                 speed_left += 2;
                 speed_top = -speed_top;
-                points += 1;
-                punkty_lbl.Text = points.ToString();
+                punkty += 1;
+                punkty_lbl.Text = punkty.ToString();
 
                 Random r = new Random();
                 Kort.BackColor = Color.FromArgb(r.Next(120, 255), r.Next(120, 255), r.Next(120, 255));
@@ -84,7 +84,7 @@ namespace PingPong
                 pilka.Left = 50;
                 speed_left = 4;
                 speed_top = 4;
-                points = 4;
+                punkty = 4;
                 punkty_lbl.Text = "0";
                 timer1.Enabled = true;
                 koniecgry_lbl.Visible = false;
