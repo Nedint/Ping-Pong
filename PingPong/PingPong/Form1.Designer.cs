@@ -30,13 +30,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.Kort = new System.Windows.Forms.Panel();
+            this.imieinazwisko = new System.Windows.Forms.Label();
             this.koniecgry_lbl = new System.Windows.Forms.Label();
             this.punkty_lbl = new System.Windows.Forms.Label();
             this.wynik_lbl = new System.Windows.Forms.Label();
             this.pilka = new System.Windows.Forms.PictureBox();
             this.rakieta = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.imieinazwisko = new System.Windows.Forms.Label();
             this.Kort.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pilka)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rakieta)).BeginInit();
@@ -55,6 +55,19 @@
             this.Kort.Name = "Kort";
             this.Kort.Size = new System.Drawing.Size(800, 450);
             this.Kort.TabIndex = 0;
+            // 
+            // imieinazwisko
+            // 
+            this.imieinazwisko.AllowDrop = true;
+            this.imieinazwisko.AutoSize = true;
+            this.imieinazwisko.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.imieinazwisko.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.imieinazwisko.Location = new System.Drawing.Point(0, 430);
+            this.imieinazwisko.Name = "imieinazwisko";
+            this.imieinazwisko.Size = new System.Drawing.Size(224, 20);
+            this.imieinazwisko.TabIndex = 6;
+            this.imieinazwisko.Text = "Ping Pong by: Mateusz Strojek";
+            this.imieinazwisko.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // koniecgry_lbl
             // 
@@ -110,19 +123,6 @@
             // 
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // imieinazwisko
-            // 
-            this.imieinazwisko.AllowDrop = true;
-            this.imieinazwisko.AutoSize = true;
-            this.imieinazwisko.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.imieinazwisko.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.imieinazwisko.Location = new System.Drawing.Point(0, 430);
-            this.imieinazwisko.Name = "imieinazwisko";
-            this.imieinazwisko.Size = new System.Drawing.Size(224, 20);
-            this.imieinazwisko.TabIndex = 6;
-            this.imieinazwisko.Text = "Ping Pong by: Mateusz Strojek";
-            this.imieinazwisko.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
